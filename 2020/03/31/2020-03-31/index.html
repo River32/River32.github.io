@@ -483,7 +483,152 @@ print_r($rs-&gt;fetchAll());
 print &quot;&lt;/pre&gt;&quot;;</code></pre><blockquote>
 <p>测试</p>
 </blockquote>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><pre><code>&lt;?php echo 111; ?&gt;</code></pre>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><pre><code>&lt;?php echo 111; ?&gt;</code></pre><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AOS的简单示例</title>
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="aos/aos.css" />
+    <link type="text/css" rel="stylesheet" href="aos_test.css" />
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<body onload="initLoad();">
+
+<pre><code>&lt;div id=&quot;transcroller&quot; class=&quot;aos-all&quot;&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;1&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;2&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;zoom-out-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;3&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;flip-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;4&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;flip-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;5&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;6&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;7&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;8&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;9&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;10&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;11&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;12&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;13&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;14&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;15&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;16&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;17&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;18&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;zoom-out&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;19&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;20&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;zoom-out&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;21&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;22&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;zoom-out-up&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;23&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;zoom-out-down&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;24&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;25&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;26&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;27&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;28&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;29&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;30&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;31&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;32&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;33&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;34&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;35&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;36&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;37&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;38&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;39&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;40&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;41&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aos-item&quot; data-aos=&quot;fade-in&quot;&gt;
+        &lt;div class=&quot;aos-item__inner&quot;&gt;&lt;h3&gt;42&lt;/h3&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre><script type="text/javascript" src="aos/aos.js"></script>
+<script type="text/javascript">
+    function initLoad() {
+        AOS.init();
+    }
+</script>
+</body>
+</html>
+
             </div>
             <hr/>
 
