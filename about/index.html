@@ -24,9 +24,13 @@
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
     
+<link rel="stylesheet" href="/css/prettify.css">
+<link rel="stylesheet" href="/css/tomorrow-night.min.css">
+
+    
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 
 <body>
@@ -871,6 +875,16 @@
 </footer>
 
 <div class="progress-bar"></div>
+<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+
+<script src="/js/prettify.js"></script>
+
+<script type="text/javascript">
+$(window).on('load', function(){ 
+$('pre').addClass('prettyprint linenums');
+prettyPrint();
+});
+</script>
 
 
     <!-- 搜索遮罩框 -->
