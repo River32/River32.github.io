@@ -483,7 +483,18 @@ print_r($rs-&gt;fetchAll());
 print &quot;&lt;/pre&gt;&quot;;</code></pre><blockquote>
 <p>测试</p>
 </blockquote>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><pre><code>    try{
+    $path = &#39;//192.168.11.71/prolist/EastRiver.mdb&#39;;//远程的共享文件地址，确认你要有访问权限        
+    $db = new PDO(&quot;odbc:driver={Microsoft Access Driver (*.mdb, *.accdb)};dbq=&quot;.realpath($path));
+    echo &quot;Connected success\n&quot;;
+} catch (Exception $e) {
+    echo &quot;Failed:&quot;.iconv(&#39;GB2312&#39;, &#39;UTF-8&#39;, $e-&gt;getMessage());
+}
+//测试连接
+$rs = $db-&gt;query(&#39;select * from employee&#39;);
+print &quot;&lt;pre&gt;&quot;;
+print_r($rs-&gt;fetchAll());
+print &quot;&lt;/pre&gt;&quot;;</code></pre>
             </div>
             <hr/>
 
