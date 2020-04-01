@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="/css/tranquil-heart.min.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     
 <meta name="generator" content="Hexo 4.2.0"></head>
 
@@ -253,13 +254,13 @@
         <div class="brand">
             <div class="title center-align">
                 
-                虎狼之词
+                每日一句
                 
             </div>
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
+                <span id="jinrishici-sentence">正在加载今日诗词....</span>
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
@@ -296,21 +297,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">3</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">1</a></span>
+    <span class="count"><a href="/tags">3</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -319,34 +320,34 @@
                     <div class="col s12 m12 l4">
                         <div class="profile center-align">
                             <div class="avatar">
-                                <img src="/medias/avatar.jpg" alt="John Doe"
+                                <img src="/medias/avatar.jpg" alt="river"
                                      class="circle responsive-img avatar-img">
                             </div>
                             <div class="author">
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">1</a></span>
+    <span class="count"><a href="/categories">3</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">1</a></span>
+    <span class="count"><a href="/tags">3</a></span>
     <span class="name">标签</span>
 </div>
 
 
                                 </div>
-                                <div class="title">John Doe</div>
+                                <div class="title">river</div>
                                 <div class="career">Software Engineer</div>
                                 <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                                     
@@ -452,7 +453,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,2,0],
+                data: [0,0,0,0,0,0,0,0,0,0,0,3,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -494,7 +495,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Hexo安装","value":1}],
+                data: [{"name":"csdn","value":1},{"name":"markdown","value":1},{"name":"Hexo安装","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -518,7 +519,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["其它"]
+                data: ["csdn","markdown","其它"]
             }
         ],
         yAxis: [
@@ -531,7 +532,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1],
+                data: [1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -699,6 +700,18 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/csdn/">
+                <span class="chip center-align waves-effect waves-light chip-default">csdn</span>
+            </a>
+            
+            
+            
+            <a href="/tags/markdown/">
+                <span class="chip center-align waves-effect waves-light chip-default">markdown</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E5%85%B6%E5%AE%83/">
                 <span class="chip center-align waves-effect waves-light chip-default">其它</span>
             </a>
@@ -764,14 +777,14 @@
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">2019</span>
-            <a href="https://river32.github.io" target="_blank">John Doe</a>
+            <span id="year">2020</span>
+            <a href="https://river32.github.io" target="_blank">river</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.6k</span>&nbsp;字
+                class="white-color">4.2k</span>&nbsp;字
             
             
             
