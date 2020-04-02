@@ -5,8 +5,8 @@
     
     <entry>
       <title>laravel再回首先导篇</title>
-      <link href="/2020/04/02/laravel%E5%86%8D%E5%9B%9E%E9%A6%96%E5%85%88%E5%AF%BC%E7%AF%87/"/>
-      <url>/2020/04/02/laravel%E5%86%8D%E5%9B%9E%E9%A6%96%E5%85%88%E5%AF%BC%E7%AF%87/</url>
+      <link href="/2020/04/02/laravel/"/>
+      <url>/2020/04/02/laravel/</url>
       
         <content type="html"><![CDATA[<blockquote><p>舍南舍北皆春水，但见群鸥日日来。</p></blockquote><h1><code>laravel</code> 史诗级序幕</h1><h2 id="前言">前言</h2><p>之前学习了一遍<code>laravel</code>,也用<code>laravel</code>做了项目，但总感觉只是浮于表面，没有理解更深层次的东西，现在打算重新系统的学习一遍，梳理各个组件的语法和实现原理</p><h2 id="学习laravel的前提">学习laravel的前提</h2><ol><li>php的基础要扎实</li><li>弄懂IOC容器,<code>laravel</code>的核心思想就是服务容器</li></ol>]]></content>
       
